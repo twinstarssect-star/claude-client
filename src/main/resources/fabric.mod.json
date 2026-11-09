@@ -1,0 +1,23 @@
+{
+	"schemaVersion": 1,
+	"id": "claudeclient",
+	"version": "${version}",
+	"name": "Claude Client",
+	"description": "Open-source utility client: hashed seed, Seed ESP (ores from the world seed), seed biome/structure finder and map, storage/player/light/sound ESP, sus chunks, farm debug, armor stand bypass, freecam, freelook, speed mine. Unofficial: not affiliated with Anthropic or Mojang.",
+	"license": "MIT",
+	"contact": {
+		"sources": "https://github.com/twinstarssect-star/claude-client",
+		"issues": "https://github.com/twinstarssect-star/claude-client/issues"
+	},
+	"icon": "assets/claudeclient/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["dev.claudeclient.ClaudeClient"]
+	},
+	"mixins": ["claudeclient.mixins.json"],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"fabric-api": "*",
+		"minecraft": "1.21.11"
+	}
+}
